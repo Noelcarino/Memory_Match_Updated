@@ -1,0 +1,83 @@
+// $(".app")
+//     .each(function(i){
+//         if(i!=0{
+//             $("")
+//         })
+//     })
+
+// $(".app")
+//   .each(function(i) {
+//     if (i != 0) {
+//       $("#myAudio")
+//         .clone()
+//         .attr("id", "beep-two" + i)
+//         .appendTo($(this).parent());
+//     }
+//     $(this).data("beeper", i);
+//   })
+//   .mouseenter(function() {
+//     $("#beep-two" + $(this).data("beeper"))[0].play();
+//     console.log("test");
+//   });
+// $("#beep-two").attr("id", "beep-two0");
+
+$(".app")
+  .each(function(i) {
+    if (i != 0) {
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");
+
+
+// $('.timer-holder').text(time+"s");  
+
+    // setInterval(function(){
+    //     time -= 1;
+    //     $('.timer-holder').text(time+"s");   
+    //     if (time == 0) {
+    //         clearInterval();
+    //         time = 60;
+    //         $('.screen').empty();
+    //         startApp();
+    //     } 
+    // }, 1000);   
+
+
+    // if (matchedAppsScore % 12 == 0 ) {
+            //     startApp();
+            //     michael++;
+
+            // // NOTIFICATION POPS UP THAT SAYS 12 MORE APPS HAVE LOADED
+            
+            //     firstAppClicked = null;
+            //     secondAppClicked = null;
+            // }
+
+
+
+// if (matchedAppsScore % 2 == 0) {
+            //     $('.app-back').addClass('help');
+            // }
+
+            // if (matchedAppsScore % 3 == 0) {
+            //     $('.app-back').removeClass('help');
+            // }
+
+
+
+// alert("You win!!");
+                // $(".screen").empty();
+                // $('.screen').removeClass('blur');
+                // matchedAppsScore = 0;
+                // attempts = 0;
+                // accuracy = 0;
+                // games_played++;
+                // $('button').removeClass('hidden');
